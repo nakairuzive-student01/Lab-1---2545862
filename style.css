@@ -8,6 +8,7 @@
 :root{
     --bg-color : #e6e6fa;
     --main-color: #38214f;
+    --accent-color: #663399;
 }
 
 body {
@@ -87,6 +88,9 @@ li{
 
 /* ===== Article Projects ===== */
 
+#projects li {
+    color: var(--accent-color);
+}
 
 /* ===== Footer ===== */
 footer {
