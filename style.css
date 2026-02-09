@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color : #e6e6fa;
+    --main-color: #38214f;
+}
+
+body {
+    font-family: 'Ubuntu Mono',Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+    color: #333;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== Header and navigation ===== */
+header {
+    /* background-color: var(--main-color); */
+    color: var(--main-color);
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Main content ===== */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* ===== Sections & articles ===== */
+section, article {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(100, 83, 148, 0.3);
+    color: var(--main-color);
+    
+}
+
+section h2,
+article h2 {
+    color: var(--font-color);
+    margin-bottom: 0.75rem;
+}
+
+li{
+    list-style: none;
+}
+
+/* ===== Article Projects ===== */
+
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--main-color);
+    color: #ccc;
+    text-align: center;
+    /* padding: 1rem; */
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* ===== Responsive design ===== */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
